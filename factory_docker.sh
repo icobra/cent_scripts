@@ -1,4 +1,8 @@
 # Install Docker CE
+
+## WARNING!!! Stop firewalld
+systemctl disable --now firewalld
+
 ## Set up the repository
 ### Install required packages.
 yum install yum-utils device-mapper-persistent-data lvm2
@@ -33,3 +37,8 @@ mkdir -p /etc/systemd/system/docker.service.d
 # Restart Docker
 systemctl daemon-reload
 systemctl restart docker
+
+# Enable Docker
+systemctl enable docker.service
+
+reboot
