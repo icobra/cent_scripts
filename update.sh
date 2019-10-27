@@ -4,6 +4,10 @@
 yum -y update
 yum -y upgrade
 
+# install some progs
+
+yum -y install mc nano net-tools 
+
 # kernel upgrade to 5.1 >
 
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
