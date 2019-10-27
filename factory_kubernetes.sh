@@ -15,5 +15,5 @@ EOF
 yum install -y kubectl
 
 ## Install kubelet, kubeadm, kubernetes-cni
-yum update
-yum install -y kubelet, kubeadm, kubernetes-cni
+yum update -y
+yum install -y kubelet kubeadm kubernetes-cni
